@@ -1,29 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//           <p>
-//             Edit <code>src/App.js</code> and save to reload.
-//           </p>
-//           <a
-//             className="App-link"
-//             href="https://reactjs.org"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             Learn React
-//           </a>
-//         </header>
-//       </div>
-//     );
-//   }
-// }
+import Test from './Test'
 
 function formatName(user) {
   return user.firstName + ' ' + user.lastName;
@@ -47,9 +25,10 @@ class App extends Component {
           <img src = {logo} className = "App-logo" alt = "logo" />
             <h2>welcome to the homepage</h2>
             {element}
+            <Test />
+            <Test />
+            <Test />
         </div>
-        <p>你可以在 <code>src/App.js</code> 文件中修改。
-        </p>
       </div>
     );
   }
